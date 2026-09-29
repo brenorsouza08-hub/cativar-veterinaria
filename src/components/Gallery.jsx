@@ -34,8 +34,8 @@ export default function Gallery() {
                 className="h-full w-full rounded-[1.5rem]"
                 imgClassName="group-hover:scale-[1.04]"
               />
-              <span className="pointer-events-none absolute inset-0 rounded-[1.5rem] bg-gradient-to-t from-forest-950/45 via-transparent to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-100" />
-              <span className="absolute bottom-4 left-4 rounded-full bg-cream-50/90 px-3.5 py-1.5 text-[0.68rem] font-semibold tracking-[0.18em] text-forest-900 uppercase backdrop-blur sm:bottom-5 sm:left-5">
+              <span className="pointer-events-none absolute inset-0 rounded-[1.5rem] bg-gradient-to-t from-plum-950/45 via-transparent to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-100" />
+              <span className="absolute bottom-4 left-4 rounded-full bg-cream-50/90 px-3.5 py-1.5 text-[0.68rem] font-semibold tracking-[0.18em] text-plum-900 uppercase backdrop-blur sm:bottom-5 sm:left-5">
                 {item.label}
               </span>
             </Reveal>

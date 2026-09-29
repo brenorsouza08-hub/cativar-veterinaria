@@ -28,10 +28,10 @@ const benefits = [
 
 export default function Benefits() {
   return (
-    <section id="cuidado" className="relative overflow-hidden bg-forest-800 py-24 text-cream-50 sm:py-32 lg:py-40">
+    <section id="cuidado" className="relative overflow-hidden bg-plum-800 py-24 text-cream-50 sm:py-32 lg:py-40">
       <div aria-hidden="true" className="pointer-events-none absolute inset-0">
-        <div className="absolute -top-32 right-[-10%] h-[30rem] w-[30rem] rounded-full bg-forest-600/40 blur-3xl" />
-        <div className="absolute bottom-[-20%] left-[-10%] h-[26rem] w-[26rem] rounded-full bg-sage-500/10 blur-3xl" />
+        <div className="absolute -top-32 right-[-10%] h-[30rem] w-[30rem] rounded-full bg-plum-600/40 blur-3xl" />
+        <div className="absolute bottom-[-20%] left-[-10%] h-[26rem] w-[26rem] rounded-full bg-lilac-500/10 blur-3xl" />
       </div>
 
       <div className="container-site relative">
@@ -46,10 +46,10 @@ export default function Benefits() {
             <Reveal
               key={title}
               delay={i * 110}
-              className="group relative flex flex-col bg-forest-800 p-8 transition-colors duration-500 hover:bg-forest-700 sm:p-10"
+              className="group relative flex flex-col bg-plum-800 p-8 transition-colors duration-500 hover:bg-plum-700 sm:p-10"
             >
-              <span className="font-serif text-sm text-sage-400">0{i + 1}</span>
-              <span className="mt-10 grid h-14 w-14 place-items-center rounded-full border border-cream-50/15 text-honey-400 transition-all duration-500 ease-[var(--ease-soft)] group-hover:border-honey-400/60 group-hover:bg-cream-50/5">
+              <span className="font-serif text-sm text-lilac-400">0{i + 1}</span>
+              <span className="mt-10 grid h-14 w-14 place-items-center rounded-full border border-cream-50/15 text-gold-400 transition-all duration-500 ease-[var(--ease-soft)] group-hover:border-gold-400/60 group-hover:bg-cream-50/5">
                 <Icon className="h-6 w-6" strokeWidth={1.4} aria-hidden="true" />
               </span>
               <h3 className="mt-8 text-2xl font-normal">{title}</h3>

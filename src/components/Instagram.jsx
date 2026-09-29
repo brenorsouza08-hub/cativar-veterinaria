@@ -17,7 +17,7 @@ export default function Instagram() {
           <Reveal delay={80}>
             <h2
               id="instagram-titulo"
-              className="mt-5 text-[2.1rem] leading-[1.08] font-light text-forest-900 sm:text-5xl lg:text-[3.4rem]"
+              className="mt-5 text-[2.1rem] leading-[1.08] font-light text-plum-900 sm:text-5xl lg:text-[3.4rem]"
             >
               Acompanhe a Cativar
             </h2>
@@ -51,13 +51,13 @@ export default function Instagram() {
                   className="h-full w-full"
                   imgClassName="group-hover:scale-[1.06]"
                 />
-                <span className="absolute inset-0 flex items-center justify-center bg-forest-900/0 text-cream-50 opacity-0 transition-all duration-500 group-hover:bg-forest-900/45 group-hover:opacity-100">
+                <span className="absolute inset-0 flex items-center justify-center bg-plum-900/0 text-cream-50 opacity-0 transition-all duration-500 group-hover:bg-plum-900/45 group-hover:opacity-100">
                   <span className="flex items-center gap-1.5 text-xs font-semibold tracking-wide">
                     <InstagramIcon className="h-5 w-5" />
                     <span className="hidden sm:inline">Ver no Instagram</span>
                   </span>
                 </span>
-                <span className="absolute top-2.5 right-2.5 grid h-7 w-7 place-items-center rounded-full bg-cream-50/85 text-forest-900 backdrop-blur transition-opacity duration-300 group-hover:opacity-0">
+                <span className="absolute top-2.5 right-2.5 grid h-7 w-7 place-items-center rounded-full bg-cream-50/85 text-plum-900 backdrop-blur transition-opacity duration-300 group-hover:opacity-0">
                   <InstagramIcon className="h-3.5 w-3.5" />
                 </span>
               </a>

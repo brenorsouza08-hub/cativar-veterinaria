@@ -28,7 +28,7 @@ export default function Header() {
       <div
         className={`transition-all duration-500 ease-[var(--ease-soft)] ${
           scrolled || open
-            ? 'border-b border-forest-800/[0.07] bg-cream-50/85 shadow-[0_8px_30px_-20px_rgba(29,58,47,0.35)] backdrop-blur-xl'
+            ? 'border-b border-plum-800/[0.07] bg-cream-50/85 shadow-[0_8px_30px_-20px_rgba(58,39,96,0.35)] backdrop-blur-xl'
             : 'border-b border-transparent bg-transparent'
         }`}
       >
@@ -49,12 +49,12 @@ export default function Header() {
                     href={`#${link.id}`}
                     aria-current={active === link.id ? 'true' : undefined}
                     className={`relative rounded-full px-4 py-2 text-[0.9rem] font-medium transition-colors duration-300 ${
-                      active === link.id ? 'text-forest-900' : 'text-ink-500 hover:text-forest-900'
+                      active === link.id ? 'text-plum-900' : 'text-ink-500 hover:text-plum-900'
                     }`}
                   >
                     {link.label}
                     <span
-                      className={`absolute inset-x-4 -bottom-0.5 h-px origin-left bg-honey-500 transition-transform duration-500 ease-[var(--ease-soft)] ${
+                      className={`absolute inset-x-4 -bottom-0.5 h-px origin-left bg-gold-500 transition-transform duration-500 ease-[var(--ease-soft)] ${
                         active === link.id ? 'scale-x-100' : 'scale-x-0'
                       }`}
                     />
@@ -69,7 +69,7 @@ export default function Header() {
               href={whatsappLink()}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden items-center gap-2 rounded-full bg-forest-800 px-5 py-2.5 text-sm font-semibold text-cream-50 transition-all duration-300 hover:-translate-y-0.5 hover:bg-forest-700 sm:inline-flex"
+              className="hidden items-center gap-2 rounded-full bg-lilac-500 px-5 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-plum-700 sm:inline-flex"
             >
               <WhatsAppIcon className="h-4 w-4" />
               WhatsApp
@@ -80,7 +80,7 @@ export default function Header() {
               aria-expanded={open}
               aria-controls="menu-mobile"
               aria-label={open ? 'Fechar menu' : 'Abrir menu'}
-              className="grid h-11 w-11 place-items-center rounded-full border border-forest-800/15 text-forest-900 transition-colors hover:bg-forest-800/5 lg:hidden"
+              className="grid h-11 w-11 place-items-center rounded-full border border-plum-800/15 text-plum-900 transition-colors hover:bg-plum-800/5 lg:hidden"
             >
               {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
@@ -100,7 +100,7 @@ export default function Header() {
             {navLinks.map((link, i) => (
               <li
                 key={link.id}
-                className="border-b border-forest-800/[0.08] transition-all duration-500 ease-[var(--ease-soft)]"
+                className="border-b border-plum-800/[0.08] transition-all duration-500 ease-[var(--ease-soft)]"
                 style={{
                   transitionDelay: open ? `${80 + i * 40}ms` : '0ms',
                   opacity: open ? 1 : 0,
@@ -110,10 +110,10 @@ export default function Header() {
                 <a
                   href={`#${link.id}`}
                   onClick={() => setOpen(false)}
-                  className="flex items-center justify-between py-4 font-serif text-[1.7rem] font-light text-forest-900"
+                  className="flex items-center justify-between py-4 font-serif text-[1.7rem] font-light text-plum-900"
                 >
                   {link.label}
-                  <ArrowUpRight className="h-5 w-5 text-sage-500" strokeWidth={1.5} />
+                  <ArrowUpRight className="h-5 w-5 text-lilac-500" strokeWidth={1.5} />
                 </a>
               </li>
             ))}
@@ -124,7 +124,7 @@ export default function Header() {
               href={whatsappLink()}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex min-h-14 items-center justify-center gap-2.5 rounded-full bg-forest-800 text-base font-semibold text-cream-50"
+              className="inline-flex min-h-14 items-center justify-center gap-2.5 rounded-full bg-lilac-500 text-base font-semibold text-white"
             >
               <WhatsAppIcon className="h-5 w-5" />
               Fale com a Cativar
@@ -133,7 +133,7 @@ export default function Header() {
               href={site.instagramUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex min-h-14 items-center justify-center gap-2.5 rounded-full border border-forest-800/20 text-base font-semibold text-forest-900"
+              className="inline-flex min-h-14 items-center justify-center gap-2.5 rounded-full border border-plum-800/20 text-base font-semibold text-plum-900"
             >
               <InstagramIcon className="h-5 w-5" />
               {site.instagramHandle}

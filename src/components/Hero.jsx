@@ -17,7 +17,7 @@ export default function Hero() {
     <section id="inicio" className="relative overflow-hidden pt-28 pb-16 sm:pt-32 lg:pt-40 lg:pb-28">
       {/* Fundo sutil */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute -top-40 -right-40 h-[38rem] w-[38rem] rounded-full bg-sage-100 blur-3xl" />
+        <div className="absolute -top-40 -right-40 h-[38rem] w-[38rem] rounded-full bg-lilac-100 blur-3xl" />
         <div className="absolute top-1/2 -left-48 h-[28rem] w-[28rem] rounded-full bg-cream-200/70 blur-3xl" />
       </div>
 
@@ -25,9 +25,9 @@ export default function Hero() {
         <div className="max-w-xl">
           <p className="hero-in eyebrow">Manaus · Monte das Oliveiras</p>
 
-          <h1 style={{ '--d': '100ms' }} className="hero-in mt-6 text-[2.6rem] leading-[1.04] font-light text-forest-900 sm:text-6xl lg:text-[4.4rem]">
+          <h1 style={{ '--d': '100ms' }} className="hero-in mt-6 text-[2.6rem] leading-[1.04] font-light text-plum-900 sm:text-6xl lg:text-[4.4rem]">
             Cuidado, saúde e carinho para quem faz parte da{' '}
-            <em className="font-normal text-forest-700 italic">sua família.</em>
+            <em className="font-normal text-lilac-500 italic">sua família.</em>
           </h1>
 
           <p style={{ '--d': '220ms' }} className="hero-in mt-7 max-w-md text-lg leading-relaxed text-ink-500">
@@ -47,11 +47,11 @@ export default function Hero() {
 
           <ul
             style={{ '--d': '420ms' }}
-            className="hero-in mt-12 flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-forest-800/10 pt-7 text-sm text-ink-500"
+            className="hero-in mt-12 flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-plum-800/10 pt-7 text-sm text-ink-500"
           >
             {segments.map(({ icon: Icon, label }) => (
               <li key={label} className="inline-flex items-center gap-2">
-                <Icon className="h-4 w-4 text-sage-500" strokeWidth={1.6} aria-hidden="true" />
+                <Icon className="h-4 w-4 text-lilac-500" strokeWidth={1.6} aria-hidden="true" />
                 {label}
               </li>
             ))}
@@ -64,16 +64,16 @@ export default function Hero() {
             <SmartImage
               {...images.hero}
               eager
-              className="arch absolute inset-0 shadow-[0_40px_80px_-40px_rgba(29,58,47,0.55)]"
+              className="arch absolute inset-0 shadow-[0_40px_80px_-40px_rgba(58,39,96,0.55)]"
             />
             <div
               aria-hidden="true"
-              className="arch absolute inset-0 -z-10 translate-x-4 translate-y-4 border border-forest-800/15 sm:translate-x-6 sm:translate-y-6"
+              className="arch absolute inset-0 -z-10 translate-x-4 translate-y-4 border border-plum-800/15 sm:translate-x-6 sm:translate-y-6"
             />
           </div>
 
-          <div className="absolute -bottom-6 left-3 flex items-center gap-4 rounded-2xl bg-cream-50/95 p-4 pr-6 shadow-[0_20px_50px_-20px_rgba(29,58,47,0.45)] ring-1 ring-forest-800/5 backdrop-blur sm:-left-8 sm:p-5 sm:pr-7">
-            <span className="grid h-11 w-11 place-items-center rounded-full bg-forest-800 font-serif text-lg text-cream-50">
+          <div className="absolute -bottom-6 left-3 flex items-center gap-4 rounded-2xl bg-cream-50/95 p-4 pr-6 shadow-[0_20px_50px_-20px_rgba(58,39,96,0.45)] ring-1 ring-plum-800/5 backdrop-blur sm:-left-8 sm:p-5 sm:pr-7">
+            <span className="grid h-11 w-11 place-items-center rounded-full bg-gold-400 font-serif text-lg text-plum-900">
               {site.rating.label}
             </span>
             <span className="flex flex-col gap-1">

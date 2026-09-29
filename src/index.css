@@ -1,29 +1,35 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-forest-950: #0f211a;
-  --color-forest-900: #16301f;
-  --color-forest-800: #1d3a2f;
-  --color-forest-700: #27493b;
-  --color-forest-600: #355c4b;
+  /* Paleta baseada na identidade da Cativar (logo e Instagram):
+     roxo/lavanda da marca + amarelo dourado da coroa + base clara. */
 
-  --color-sage-500: #7f9a86;
-  --color-sage-400: #9bb1a0;
-  --color-sage-300: #bccbbd;
-  --color-sage-200: #d7e0d5;
-  --color-sage-100: #e8eee6;
+  /* Roxo profundo — textos, botões e seções escuras */
+  --color-plum-950: #1d1430;
+  --color-plum-900: #291c44;
+  --color-plum-800: #3a2760;
+  --color-plum-700: #4c3479;
+  --color-plum-600: #634594;
 
-  --color-cream-50: #fbfaf6;
-  --color-cream-100: #f6f2ea;
-  --color-cream-200: #eee7da;
-  --color-cream-300: #e2d8c6;
+  /* Lavanda — o roxo do logotipo e seus tons claros */
+  --color-lilac-500: #7c5cb3;
+  --color-lilac-400: #9f86cb;
+  --color-lilac-300: #c3b3e2;
+  --color-lilac-200: #ddd3ef;
+  --color-lilac-100: #efeaf8;
 
-  --color-ink-900: #1b2420;
-  --color-ink-700: #3d4943;
-  --color-ink-500: #67736c;
+  --color-cream-50: #fcfbf9;
+  --color-cream-100: #f7f4f0;
+  --color-cream-200: #efe9e1;
+  --color-cream-300: #e3dace;
 
-  --color-honey-400: #d2ae63;
-  --color-honey-500: #c29a4a;
+  --color-ink-900: #221a2e;
+  --color-ink-700: #463c55;
+  --color-ink-500: #6f6680;
+
+  /* Amarelo dourado — destaques pontuais (coroa do logo, estrelas) */
+  --color-gold-400: #f6c453;
+  --color-gold-500: #e9a824;
 
   --font-serif: 'Fraunces', ui-serif, Georgia, serif;
   --font-sans: 'Manrope', ui-sans-serif, system-ui, sans-serif;
@@ -52,11 +58,11 @@
   }
 
   ::selection {
-    @apply bg-sage-200 text-forest-900;
+    @apply bg-lilac-200 text-plum-900;
   }
 
   :focus-visible {
-    @apply outline-2 outline-offset-4 outline-honey-500;
+    @apply outline-2 outline-offset-4 outline-gold-500;
   }
 }
 
@@ -66,12 +72,12 @@
   }
 
   .eyebrow {
-    @apply inline-flex items-center gap-3 text-[0.72rem] font-semibold tracking-[0.22em] text-sage-500 uppercase;
+    @apply inline-flex items-center gap-3 text-[0.72rem] font-semibold tracking-[0.22em] text-lilac-500 uppercase;
   }
 
   .eyebrow::before {
     content: '';
-    @apply block h-px w-8 bg-current opacity-70;
+    @apply block h-0.5 w-8 rounded-full bg-gold-400;
   }
 
   .arch {
@@ -79,7 +85,7 @@
   }
 
   .grain {
-    background-image: radial-gradient(rgba(29, 58, 47, 0.06) 1px, transparent 1px);
+    background-image: radial-gradient(rgba(58, 39, 96, 0.07) 1px, transparent 1px);
     background-size: 22px 22px;
   }
 }

@@ -13,7 +13,7 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer className="bg-forest-950 text-cream-100/70">
+    <footer className="bg-plum-950 text-cream-100/70">
       <div className="container-site grid gap-12 py-16 sm:py-20 md:grid-cols-[1.4fr_1fr_1.2fr]">
         <div>
           <Logo tone="light" />
@@ -41,7 +41,7 @@ export default function Footer() {
         </div>
 
         <nav aria-label="Links do rodapé">
-          <p className="text-xs font-semibold tracking-[0.2em] text-sage-400 uppercase">Navegação</p>
+          <p className="text-xs font-semibold tracking-[0.2em] text-lilac-400 uppercase">Navegação</p>
           <ul className="mt-5 grid grid-cols-2 gap-x-6 gap-y-3 text-sm">
             {links.map((link) => (
               <li key={link.label}>
@@ -58,7 +58,7 @@ export default function Footer() {
         </nav>
 
         <div>
-          <p className="text-xs font-semibold tracking-[0.2em] text-sage-400 uppercase">Contato</p>
+          <p className="text-xs font-semibold tracking-[0.2em] text-lilac-400 uppercase">Contato</p>
           <address className="mt-5 flex flex-col gap-3 text-sm leading-relaxed not-italic">
             <span>
               {site.address.street}

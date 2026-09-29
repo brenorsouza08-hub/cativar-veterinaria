@@ -21,15 +21,15 @@ export default function About() {
           <div className="relative pr-10 pb-16 sm:pr-16 sm:pb-20">
             <SmartImage
               {...images.aboutMain}
-              className="aspect-[4/5] rounded-[1.75rem] shadow-[0_40px_80px_-45px_rgba(29,58,47,0.6)]"
+              className="aspect-[4/5] rounded-[1.75rem] shadow-[0_40px_80px_-45px_rgba(58,39,96,0.6)]"
               imgClassName="hover:scale-[1.03]"
             />
-            <div className="absolute right-0 bottom-0 w-[46%] rounded-[1.5rem] bg-cream-50 p-2 shadow-[0_30px_60px_-30px_rgba(29,58,47,0.5)]">
+            <div className="absolute right-0 bottom-0 w-[46%] rounded-[1.5rem] bg-cream-50 p-2 shadow-[0_30px_60px_-30px_rgba(58,39,96,0.5)]">
               <SmartImage {...images.aboutDetail} className="arch aspect-[3/4]" />
             </div>
             <div
               aria-hidden="true"
-              className="grain absolute -top-8 -left-8 -z-10 h-40 w-40 rounded-full bg-sage-100 sm:h-56 sm:w-56"
+              className="grain absolute -top-8 -left-8 -z-10 h-40 w-40 rounded-full bg-lilac-100 sm:h-56 sm:w-56"
             />
           </div>
         </Reveal>
@@ -40,7 +40,7 @@ export default function About() {
             <span className="eyebrow">Sobre a Cativar</span>
           </Reveal>
           <Reveal delay={80}>
-            <h2 className="mt-5 text-[2.1rem] leading-[1.08] font-light text-forest-900 sm:text-5xl lg:text-[3.4rem]">
+            <h2 className="mt-5 text-[2.1rem] leading-[1.08] font-light text-plum-900 sm:text-5xl lg:text-[3.4rem]">
               Um cuidado que vai <em className="italic">além</em> do atendimento.
             </h2>
           </Reveal>
@@ -57,12 +57,12 @@ export default function About() {
               {pillars.map(({ icon: Icon, label }) => (
                 <li
                   key={label}
-                  className="flex items-center gap-3 rounded-2xl border border-forest-800/10 bg-white/60 px-4 py-4 sm:flex-col sm:items-start sm:gap-4 sm:px-5 sm:py-5"
+                  className="flex items-center gap-3 rounded-2xl border border-plum-800/10 bg-white/60 px-4 py-4 sm:flex-col sm:items-start sm:gap-4 sm:px-5 sm:py-5"
                 >
-                  <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-sage-100 text-forest-800">
+                  <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-lilac-100 text-plum-800">
                     <Icon className="h-[1.15rem] w-[1.15rem]" strokeWidth={1.6} aria-hidden="true" />
                   </span>
-                  <span className="text-sm font-semibold text-forest-900">{label}</span>
+                  <span className="text-sm font-semibold text-plum-900">{label}</span>
                 </li>
               ))}
             </ul>
@@ -71,7 +71,7 @@ export default function About() {
           <Reveal delay={320} className="mt-10">
             <Button href={whatsappLink()} external variant="link" className="text-base">
               <WhatsAppIcon className="h-[1.1rem] w-[1.1rem]" />
-              <span className="border-b border-forest-800/30 pb-0.5 transition-colors group-hover:border-forest-800">
+              <span className="border-b border-plum-800/30 pb-0.5 transition-colors group-hover:border-plum-800">
                 Fale com a Cativar
               </span>
             </Button>

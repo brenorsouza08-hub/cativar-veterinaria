@@ -2,14 +2,14 @@ import Reveal from './Reveal'
 
 export default function SectionHeading({ eyebrow, title, description, align = 'left', tone = 'dark', className = '' }) {
   const centered = align === 'center'
-  const titleColor = tone === 'light' ? 'text-cream-50' : 'text-forest-900'
+  const titleColor = tone === 'light' ? 'text-cream-50' : 'text-plum-900'
   const textColor = tone === 'light' ? 'text-cream-100/70' : 'text-ink-500'
 
   return (
     <div className={`${centered ? 'mx-auto text-center' : ''} max-w-2xl ${className}`}>
       {eyebrow && (
         <Reveal>
-          <span className={`eyebrow ${tone === 'light' ? 'text-sage-300' : ''}`}>{eyebrow}</span>
+          <span className={`eyebrow ${tone === 'light' ? 'text-lilac-300' : ''}`}>{eyebrow}</span>
         </Reveal>
       )}
       <Reveal delay={80}>

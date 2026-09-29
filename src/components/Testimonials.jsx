@@ -15,13 +15,13 @@ export default function Testimonials() {
             <span className="eyebrow">Avaliações</span>
           </Reveal>
           <Reveal delay={80}>
-            <h2 className="mt-5 text-[2.1rem] leading-[1.08] font-light text-forest-900 sm:text-5xl lg:text-[3.4rem]">
+            <h2 className="mt-5 text-[2.1rem] leading-[1.08] font-light text-plum-900 sm:text-5xl lg:text-[3.4rem]">
               O que os tutores dizem
             </h2>
           </Reveal>
 
           <Reveal delay={160} className="mt-10 flex items-end gap-5">
-            <span className="font-serif text-7xl leading-none font-light text-forest-900 sm:text-8xl">
+            <span className="font-serif text-7xl leading-none font-light text-plum-900 sm:text-8xl">
               {site.rating.label}
             </span>
             <span className="pb-2 text-lg text-ink-500">/ 5</span>
@@ -49,13 +49,13 @@ export default function Testimonials() {
               as="li"
               key={text}
               delay={i * 120}
-              className={`rounded-[1.75rem] border border-forest-800/[0.08] bg-white/70 p-8 transition-all duration-500 ease-[var(--ease-soft)] hover:border-forest-800/15 hover:shadow-[0_30px_60px_-40px_rgba(29,58,47,0.4)] sm:p-10 ${
+              className={`rounded-[1.75rem] border border-plum-800/[0.08] bg-white/70 p-8 transition-all duration-500 ease-[var(--ease-soft)] hover:border-plum-800/15 hover:shadow-[0_30px_60px_-40px_rgba(58,39,96,0.4)] sm:p-10 ${
                 i === 1 ? 'lg:ml-12' : ''
               }`}
             >
               <figure>
-                <Quote className="h-7 w-7 text-sage-300" strokeWidth={1.4} aria-hidden="true" />
-                <blockquote className="mt-5 font-serif text-xl leading-snug font-light text-forest-900 sm:text-2xl">
+                <Quote className="h-7 w-7 text-lilac-300" strokeWidth={1.4} aria-hidden="true" />
+                <blockquote className="mt-5 font-serif text-xl leading-snug font-light text-plum-900 sm:text-2xl">
                   “{text}”
                 </blockquote>
                 <figcaption className="mt-7 flex flex-wrap items-center gap-3 text-sm text-ink-500">

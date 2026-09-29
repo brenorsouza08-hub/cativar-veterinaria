@@ -1,7 +1,7 @@
 import { Star } from 'lucide-react'
 
 // Estrelas com preenchimento proporcional (ex.: 4,7 → 4 cheias + 70% da quinta)
-export default function StarRating({ value, className = 'h-4 w-4', color = 'text-honey-500' }) {
+export default function StarRating({ value, className = 'h-4 w-4', color = 'text-gold-500' }) {
   return (
     <span className="inline-flex items-center gap-0.5" role="img" aria-label={`${String(value).replace('.', ',')} de 5 estrelas`}>
       {[0, 1, 2, 3, 4].map((i) => {

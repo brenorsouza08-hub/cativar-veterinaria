@@ -56,7 +56,7 @@ export default function Services() {
               key={service.number}
               as="article"
               delay={i * 120}
-              className="group flex flex-col overflow-hidden rounded-[1.75rem] bg-cream-50 ring-1 ring-forest-800/[0.06] transition-[box-shadow,transform] duration-500 ease-[var(--ease-soft)] hover:-translate-y-1.5 hover:shadow-[0_40px_70px_-40px_rgba(29,58,47,0.45)]"
+              className="group flex flex-col overflow-hidden rounded-[1.75rem] bg-cream-50 ring-1 ring-plum-800/[0.06] transition-[box-shadow,transform] duration-500 ease-[var(--ease-soft)] hover:-translate-y-1.5 hover:shadow-[0_40px_70px_-40px_rgba(58,39,96,0.45)]"
             >
               <div className="relative p-2.5 pb-0">
                 <SmartImage
@@ -64,15 +64,15 @@ export default function Services() {
                   className="aspect-[4/3] rounded-[1.35rem]"
                   imgClassName="group-hover:scale-[1.04]"
                 />
-                <span className="absolute top-6 left-6 rounded-full bg-cream-50/90 px-3 py-1 font-serif text-sm text-forest-800 backdrop-blur">
+                <span className="absolute top-6 left-6 rounded-full bg-cream-50/90 px-3 py-1 font-serif text-sm text-plum-800 backdrop-blur">
                   {service.number}
                 </span>
               </div>
 
               <div className="flex flex-1 flex-col p-7 sm:p-8">
                 <div className="flex items-center gap-3">
-                  <service.icon className="h-5 w-5 text-sage-500" strokeWidth={1.6} aria-hidden="true" />
-                  <h3 className="text-2xl font-normal text-forest-900 sm:text-[1.7rem]">{service.title}</h3>
+                  <service.icon className="h-5 w-5 text-lilac-500" strokeWidth={1.6} aria-hidden="true" />
+                  <h3 className="text-2xl font-normal text-plum-900 sm:text-[1.7rem]">{service.title}</h3>
                 </div>
                 <p className="mt-4 flex-1 leading-relaxed text-ink-500">{service.text}</p>
 
@@ -80,13 +80,13 @@ export default function Services() {
                   href={whatsappLink(service.message)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-8 flex min-h-12 items-center justify-between gap-4 border-t border-forest-800/10 pt-6 text-[0.95rem] font-semibold text-forest-800"
+                  className="mt-8 flex min-h-12 items-center justify-between gap-4 border-t border-plum-800/10 pt-6 text-[0.95rem] font-semibold text-plum-800"
                 >
                   <span className="inline-flex items-center gap-2.5">
-                    <WhatsAppIcon className="h-4 w-4 text-sage-500" />
+                    <WhatsAppIcon className="h-4 w-4 text-lilac-500" />
                     {service.cta}
                   </span>
-                  <span className="grid h-10 w-10 place-items-center rounded-full border border-forest-800/15 transition-all duration-500 ease-[var(--ease-soft)] group-hover:rotate-45 group-hover:border-forest-800 group-hover:bg-forest-800 group-hover:text-cream-50">
+                  <span className="grid h-10 w-10 place-items-center rounded-full border border-plum-800/15 transition-all duration-500 ease-[var(--ease-soft)] group-hover:rotate-45 group-hover:border-plum-800 group-hover:bg-plum-800 group-hover:text-cream-50">
                     <ArrowUpRight className="h-4 w-4" />
                   </span>
                 </a>
